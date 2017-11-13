@@ -9,7 +9,7 @@ FROM lianlian/ubuntu
 
 # Install Nginx.
 RUN \
-   apt-get install -y software-properties-common python-software-properties \ 
+   apt-get install -y software-properties-common python-software-properties && \ 
    add-apt-repository -y ppa:nginx/stable && \
    apt-get update && \
   apt-get install -y nginx && \
